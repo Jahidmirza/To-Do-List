@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+*,
+*:before,
+*:after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.hero{
+  width: 1000px;
+  height: 100vh;
+  background:linear-gradient(
+  135deg,
+  #8052ec,
+  #d161ff
+  ) ;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
+}
+.container{
+  width: 40%;
+  min-width: 450px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 30px 40px;
+}
+#new-task{
+  position: relative;
+  background-color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+#new-task input{
+  position: relative;
+  width: 70%;
+  height: 45px;
+  border: 2px solid #d1d3d4;
+  padding: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #111111;
+}
+#new-task input:focus{
+  outline: none;
+  border-color:#8052ec;
+}
+#new-task button{
+  position: relative;
+  width: 25%;
+  height: 45px;
+  background-color: #8052ec;
+  color: #ffffff;
+  border-radius: 5px;
+  float: right;
+  border:none;
+  padding: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+#addTasks{
+  background-color: #ffffff;
+  padding: 30px 20px;
+  margin-top: 50px;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  position: relative;
+}
+.task{
+  background-color: #ffffff;
+  height: 50px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #d1d3d4;
+  cursor: pointer;
+}
+#taskName{
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+.dalated{
+  background-color: #8062ec;
+  color: #ffffff;
+  height: 100%;
+  width: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.icon{
+  font-size: 20px;
+}
+.completed{
+  text-decoration: line-through;
+}
